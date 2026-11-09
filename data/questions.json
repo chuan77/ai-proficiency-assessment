@@ -1,0 +1,380 @@
+[
+  {
+    "id": "q01",
+    "type": "mcq",
+    "topic": "Fundamentals",
+    "difficulty": "beginner",
+    "question": "What does 'LLM' stand for?",
+    "options": [
+      "Large Learning Machine",
+      "Large Language Model",
+      "Logical Language Module",
+      "Long Latent Memory"
+    ],
+    "correct_answer": "Large Language Model",
+    "explanation": "LLM stands for Large Language Model — a type of AI model trained on vast amounts of text data."
+  },
+  {
+    "id": "q02",
+    "type": "mcq",
+    "topic": "Fundamentals",
+    "difficulty": "beginner",
+    "question": "Which of the following best describes 'hallucination' in the context of AI?",
+    "options": [
+      "When the model becomes too creative",
+      "When the model generates false or made-up information that sounds plausible",
+      "When the model refuses to answer a question",
+      "When the model runs out of context window"
+    ],
+    "correct_answer": "When the model generates false or made-up information that sounds plausible",
+    "explanation": "Hallucination refers to the model producing confident but incorrect or fabricated information."
+  },
+  {
+    "id": "q03",
+    "type": "mcq",
+    "topic": "Fundamentals",
+    "difficulty": "intermediate",
+    "question": "What is the main purpose of the 'context window' in an LLM?",
+    "options": [
+      "It determines how creative the model can be",
+      "It defines how much previous text the model can consider when generating a response",
+      "It controls the model's temperature",
+      "It limits the number of users who can access the model"
+    ],
+    "correct_answer": "It defines how much previous text the model can consider when generating a response",
+    "explanation": "The context window is the maximum amount of tokens (text) the model can process at once, including both the prompt and the generated response."
+  },
+  {
+    "id": "q04",
+    "type": "mcq",
+    "topic": "Prompt Engineering",
+    "difficulty": "beginner",
+    "question": "Which of the following is generally the most effective way to improve an LLM's output quality?",
+    "options": [
+      "Making the prompt as short as possible",
+      "Using clear instructions, examples, and specifying the desired format",
+      "Always using the highest temperature setting",
+      "Asking the model to 'think creatively'"
+    ],
+    "correct_answer": "Using clear instructions, examples, and specifying the desired format",
+    "explanation": "Clear instructions, few-shot examples, and output format specification are core prompt engineering best practices."
+  },
+  {
+    "id": "q05",
+    "type": "mcq",
+    "topic": "Prompt Engineering",
+    "difficulty": "intermediate",
+    "question": "What is 'few-shot prompting'?",
+    "options": [
+      "Giving the model only one example",
+      "Providing the model with several examples of the desired input-output pattern before asking it to perform the task",
+      "Restricting the model to short answers",
+      "Using multiple models at the same time"
+    ],
+    "correct_answer": "Providing the model with several examples of the desired input-output pattern before asking it to perform the task",
+    "explanation": "Few-shot prompting involves giving the model a small number of examples to help it understand the desired pattern or format."
+  },
+  {
+    "id": "q06",
+    "type": "mcq",
+    "topic": "Prompt Engineering",
+    "difficulty": "advanced",
+    "question": "Which prompting technique involves asking the model to solve a problem by breaking it down into intermediate reasoning steps?",
+    "options": [
+      "Zero-shot prompting",
+      "Chain-of-Thought (CoT) prompting",
+      "Role prompting",
+      "Temperature sampling"
+    ],
+    "correct_answer": "Chain-of-Thought (CoT) prompting",
+    "explanation": "Chain-of-Thought prompting encourages the model to generate step-by-step reasoning before giving the final answer, which often improves performance on complex tasks."
+  },
+  {
+    "id": "q07",
+    "type": "mcq",
+    "topic": "Limitations & Risks",
+    "difficulty": "intermediate",
+    "question": "Why can LLMs be problematic when used for factual or high-stakes decisions?",
+    "options": [
+      "They are always outdated",
+      "They can generate plausible-sounding but incorrect information and lack true understanding",
+      "They refuse to answer difficult questions",
+      "They only work in English"
+    ],
+    "correct_answer": "They can generate plausible-sounding but incorrect information and lack true understanding",
+    "explanation": "LLMs do not have grounded understanding or real-time fact-checking by default, making them risky for high-stakes factual decisions without verification."
+  },
+  {
+    "id": "q08",
+    "type": "mcq",
+    "topic": "Limitations & Risks",
+    "difficulty": "advanced",
+    "question": "What is a major risk of using AI-generated content without human review in professional settings?",
+    "options": [
+      "The content will always be too formal",
+      "It can introduce factual errors, bias, or copyright issues that damage credibility or create legal risk",
+      "It will be too short",
+      "It cannot generate bullet points"
+    ],
+    "correct_answer": "It can introduce factual errors, bias, or copyright issues that damage credibility or create legal risk",
+    "explanation": "Unreviewed AI content can contain hallucinations, biased language, or regurgitated copyrighted material."
+  },
+  {
+    "id": "q09",
+    "type": "mcq",
+    "topic": "Practical Application",
+    "difficulty": "intermediate",
+    "question": "You need an LLM to extract structured data (name, date, amount) from invoices. What is the best approach?",
+    "options": [
+      "Ask the model to 'read the invoice and tell me everything'",
+      "Provide a clear schema/format (e.g. JSON) and examples of correct extractions",
+      "Use the highest temperature setting for more creativity",
+      "Ask the model to summarize the invoice"
+    ],
+    "correct_answer": "Provide a clear schema/format (e.g. JSON) and examples of correct extractions",
+    "explanation": "For structured extraction, specifying the exact output format and giving examples significantly improves reliability."
+  },
+  {
+    "id": "q10",
+    "type": "mcq",
+    "topic": "Practical Application",
+    "difficulty": "advanced",
+    "question": "When building a RAG (Retrieval-Augmented Generation) system, what is the primary purpose of the retrieval step?",
+    "options": [
+      "To make the model more creative",
+      "To fetch relevant external information so the model can ground its answer in real data",
+      "To reduce the model’s temperature",
+      "To compress the prompt"
+    ],
+    "correct_answer": "To fetch relevant external information so the model can ground its answer in real data",
+    "explanation": "RAG retrieves relevant documents/chunks and provides them to the LLM so it can generate answers based on actual source material rather than only its parametric knowledge."
+  },
+  {
+    "id": "q11",
+    "type": "open",
+    "topic": "Prompt Engineering",
+    "difficulty": "intermediate",
+    "question": "Write a well-structured prompt that asks an LLM to act as a professional code reviewer. The prompt should instruct the model to review Python code for bugs, readability, and performance, and to return the feedback in a specific format.",
+    "evaluation_criteria": "Should include role definition, clear task, evaluation criteria (bugs, readability, performance), and a defined output format. Higher scores for clarity, structure, and specificity."
+  },
+  {
+    "id": "q12",
+    "type": "open",
+    "topic": "Prompt Engineering",
+    "difficulty": "advanced",
+    "question": "Explain the difference between zero-shot, few-shot, and chain-of-thought prompting. Provide a short example use case where each would be most appropriate.",
+    "evaluation_criteria": "Correct definitions of all three techniques + relevant and distinct use cases for each. Clarity and accuracy are key."
+  },
+  {
+    "id": "q13",
+    "type": "open",
+    "topic": "Limitations & Risks",
+    "difficulty": "intermediate",
+    "question": "A colleague wants to use an LLM to automatically generate performance reviews for employees based on short notes. What risks would you highlight, and what safeguards would you recommend?",
+    "evaluation_criteria": "Should mention risks such as bias, lack of nuance, hallucination of performance issues, privacy concerns, and fairness. Good answers propose human review, structured input, and transparency."
+  },
+  {
+    "id": "q14",
+    "type": "open",
+    "topic": "Fundamentals",
+    "difficulty": "advanced",
+    "question": "Explain what 'temperature' does in an LLM and how you would choose different temperature settings for the following tasks: (1) creative storytelling, (2) extracting structured data from text, (3) answering a factual question.",
+    "evaluation_criteria": "Correct explanation of temperature + appropriate recommendations (higher for creative, very low for extraction and factual tasks)."
+  },
+  {
+    "id": "q15",
+    "type": "open",
+    "topic": "Practical Application",
+    "difficulty": "advanced",
+    "question": "You are asked to design a simple internal tool that lets employees ask questions about company HR policies. The source documents are PDFs that change occasionally. Describe the high-level architecture you would recommend and explain why.",
+    "evaluation_criteria": "Should mention document processing/chunking, embedding + vector store (or equivalent), retrieval step, LLM generation, and ideally some form of citation or source linking. Bonus for mentioning update/re-indexing strategy."
+  },
+  {
+    "id": "q16",
+    "type": "mcq",
+    "topic": "Fundamentals",
+    "difficulty": "intermediate",
+    "question": "What is the main difference between fine-tuning and prompt engineering?",
+    "options": [
+      "Fine-tuning changes the model’s weights; prompt engineering works with the existing model by changing the input",
+      "Prompt engineering requires more computing power than fine-tuning",
+      "Fine-tuning is only possible with closed-source models",
+      "There is no real difference"
+    ],
+    "correct_answer": "Fine-tuning changes the model’s weights; prompt engineering works with the existing model by changing the input",
+    "explanation": "Prompt engineering guides the model via inputs. Fine-tuning actually updates the model’s parameters using additional training data."
+  },
+  {
+    "id": "q17",
+    "type": "mcq",
+    "topic": "Limitations & Risks",
+    "difficulty": "beginner",
+    "question": "Which of the following is a good practice when using AI-generated content at work?",
+    "options": [
+      "Always publish it immediately to save time",
+      "Fact-check important claims and review for tone, bias, and accuracy before using it",
+      "Assume the AI is always correct if the answer sounds confident",
+      "Never tell anyone you used AI"
+    ],
+    "correct_answer": "Fact-check important claims and review for tone, bias, and accuracy before using it",
+    "explanation": "Human oversight remains essential, especially for external or high-stakes content."
+  },
+  {
+    "id": "q18",
+    "type": "open",
+    "topic": "Practical Application",
+    "difficulty": "intermediate",
+    "question": "You need the model to return a consistent JSON object with specific fields. Describe at least three techniques you would use in your prompt to improve the reliability of the JSON output.",
+    "evaluation_criteria": "Good answers may include: specifying the exact schema, providing examples, asking for JSON only, using constraints like 'do not include markdown', or using tools/functions if available."
+  },
+  {
+    "id": "q19",
+    "type": "mcq",
+    "topic": "Prompt Engineering",
+    "difficulty": "advanced",
+    "question": "What is the main benefit of using system prompts / role instructions (when available)?",
+    "options": [
+      "They make the model run faster",
+      "They help set persistent behavior, personality, and constraints for the entire conversation",
+      "They increase the context window",
+      "They prevent the model from using external knowledge"
+    ],
+    "correct_answer": "They help set persistent behavior, personality, and constraints for the entire conversation",
+    "explanation": "System prompts allow you to define the model’s role, style, and rules that apply across the conversation."
+  },
+  {
+    "id": "q20",
+    "type": "open",
+    "topic": "Limitations & Risks",
+    "difficulty": "expert",
+    "question": "A company wants to let employees use a powerful public LLM with company data (including customer information). What are the key governance, privacy, and security concerns you would raise, and what controls would you recommend before allowing this?",
+    "evaluation_criteria": "Strong answers should cover data leakage risks, training data concerns, access control, DLP, approved tools vs shadow AI, logging/monitoring, and possibly private/local model alternatives or enterprise agreements."
+  },
+  {
+    "id": "q21",
+    "type": "code",
+    "topic": "Practical Application",
+    "difficulty": "intermediate",
+    "question": "Write a function `is_palindrome(s: str) -> bool` that checks whether a given string is a palindrome.\n\nA palindrome reads the same forwards and backwards. Ignore case and non-alphanumeric characters.\n\nExamples:\n- is_palindrome(\"racecar\") → True\n- is_palindrome(\"A man, a plan, a canal: Panama\") → True\n- is_palindrome(\"hello\") → False",
+    "starter_code": "def is_palindrome(s: str) -> bool:\n    # Your code here\n    pass",
+    "test_cases": [
+      {
+        "input": ["racecar"],
+        "expected": true,
+        "visible": true
+      },
+      {
+        "input": ["A man, a plan, a canal: Panama"],
+        "expected": true,
+        "visible": true
+      },
+      {
+        "input": ["hello"],
+        "expected": false,
+        "visible": true
+      },
+      {
+        "input": ["No lemon, no melon"],
+        "expected": true
+      },
+      {
+        "input": [""],
+        "expected": true
+      },
+      {
+        "input": ["12321"],
+        "expected": true
+      },
+      {
+        "input": ["Python"],
+        "expected": false
+      }
+    ],
+    "timeout_seconds": 3,
+    "points": 10,
+    "evaluation_criteria": "All test cases must pass. The function should correctly ignore case and non-alphanumeric characters."
+  },
+  {
+    "id": "q22",
+    "type": "code",
+    "topic": "Practical Application",
+    "difficulty": "intermediate",
+    "question": "Write a function `are_anagrams(str1: str, str2: str) -> bool` that checks whether two strings are anagrams of each other.\n\nTwo strings are anagrams if they contain the exact same characters with the same frequencies (case-insensitive). Ignore spaces.\n\nExamples:\n- are_anagrams(\"listen\", \"silent\") → True\n- are_anagrams(\"hello\", \"world\") → False\n- are_anagrams(\"Dormitory\", \"Dirty room\") → True",
+    "starter_code": "def are_anagrams(str1: str, str2: str) -> bool:\n    # Your code here\n    pass",
+    "test_cases": [
+      {
+        "input": ["listen", "silent"],
+        "expected": true,
+        "visible": true
+      },
+      {
+        "input": ["hello", "world"],
+        "expected": false,
+        "visible": true
+      },
+      {
+        "input": ["Dormitory", "Dirty room"],
+        "expected": true,
+        "visible": true
+      },
+      {
+        "input": ["rail safety", "fairy tales"],
+        "expected": true
+      },
+      {
+        "input": ["Python", "Java"],
+        "expected": false
+      },
+      {
+        "input": ["a", "a"],
+        "expected": true
+      },
+      {
+        "input": ["Night", "Thing"],
+        "expected": true
+      }
+    ],
+    "timeout_seconds": 3,
+    "points": 10,
+    "evaluation_criteria": "All test cases must pass. Comparison should be case-insensitive and ignore spaces."
+  },
+  {
+    "id": "q23",
+    "type": "code",
+    "topic": "Practical Application",
+    "difficulty": "advanced",
+    "question": "Write a function `most_common_word(text: str) -> str` that returns the most frequently occurring word in a given text.\n\nRules:\n- Ignore punctuation\n- Case-insensitive\n- If there is a tie, return the word that appears first in alphabetical order\n\nExamples:\n- most_common_word(\"Hello hello world, world!\") → \"hello\"\n- most_common_word(\"The quick brown fox jumps over the lazy dog\") → \"the\"",
+    "starter_code": "def most_common_word(text: str) -> str:\n    # Your code here\n    pass",
+    "test_cases": [
+      {
+        "input": ["Hello hello world, world!"],
+        "expected": "hello",
+        "visible": true
+      },
+      {
+        "input": ["The quick brown fox jumps over the lazy dog"],
+        "expected": "the",
+        "visible": true
+      },
+      {
+        "input": ["Apple banana apple orange banana apple"],
+        "expected": "apple"
+      },
+      {
+        "input": ["One two three two three three"],
+        "expected": "three"
+      },
+      {
+        "input": ["Hi"],
+        "expected": "hi"
+      },
+      {
+        "input": ["She sells sea shells on the sea shore"],
+        "expected": "sea"
+      }
+    ],
+    "timeout_seconds": 3,
+    "points": 12,
+    "evaluation_criteria": "Must correctly count word frequency, ignore punctuation and case, and handle ties by choosing alphabetical order."
+  }
+]
